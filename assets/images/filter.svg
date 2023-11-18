@@ -1,0 +1,14 @@
+<svg id="Icon" xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46">
+  <rect id="Rectangle" width="46" height="46" rx="10" fill="#b59f7c"/>
+  <g id="Icon-2" data-name="Icon" transform="translate(13 14)">
+    <path id="Path" d="M.455,7V0" transform="translate(16.818 11)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.6"/>
+    <path id="Path-2" data-name="Path" d="M.455,7V0" transform="translate(16.818)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.6"/>
+    <path id="Path-3" data-name="Path" d="M.455,9V0" transform="translate(9.545 9)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.6"/>
+    <path id="Path-4" data-name="Path" d="M.455,5V0" transform="translate(9.545)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.6"/>
+    <path id="Path-5" data-name="Path" d="M.455,5V0" transform="translate(2.273 13)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.6"/>
+    <path id="Path-6" data-name="Path" d="M.455,9V0" transform="translate(2.273)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.6"/>
+    <path id="Path-7" data-name="Path" d="M5.455.5H0" transform="translate(14.545 10.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.6"/>
+    <path id="Path-8" data-name="Path" d="M5.455.5H0" transform="translate(7.273 4.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.6"/>
+    <path id="Path-9" data-name="Path" d="M5.455.5H0" transform="translate(0 12.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.6"/>
+  </g>
+</svg>
