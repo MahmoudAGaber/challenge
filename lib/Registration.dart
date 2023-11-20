@@ -16,188 +16,229 @@ class _RegistrationState extends State<Registration> {
   @override
   Widget build(BuildContext context) {
     return Directionality(
-      textDirection: TextDirection.rtl,
+      textDirection: TextDirection.ltr,
       child: Scaffold(
+        resizeToAvoidBottomInset: false,
         body: Container(
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
           decoration: BoxDecoration(
-              image: DecorationImage(
-                  image: AssetImage("assets/images/background2.png",),
-                  fit: BoxFit.fill
-              )
+              color: Color(0xff1e1e36)
           ),
-          child: Column(
-            children: [
-              Padding(
-                padding: const EdgeInsets.only(left: 40,right: 40, top: 50),
-                child: Column(
+          child: Padding(
+            padding: const EdgeInsets.only(left: 40,right: 40, top: 40),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 40),
+                  child: Text('Sign Up',style: TextStyle(fontSize: 32,color: Colors.white),),
+                ),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 20),
-                      child: SvgPicture.asset("assets/images/logo.svg",height: 53,width: 67,),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 12),
-                      child: Text('اشتـراك',style: TextStyle(fontSize: 32,color: Color(0xff656565)),),
-                    ),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 14,vertical: 12),
-                          child: Text("اسم المستخدم",style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold,color: Color(0xff484541)),),
-                        ),
-                        Container(
-                          height: 51,
-                          child: TextFormField(
-                            textInputAction: TextInputAction.done,
-                            keyboardType: TextInputType.phone,
-                            textDirection: TextDirection.rtl,
-                            cursorColor: Colors.grey,
-                            decoration: InputDecoration(
-                                contentPadding: EdgeInsets.symmetric(horizontal: 20),
-                                fillColor: Colors.white,
-                                filled: true,
-                                hintTextDirection: TextDirection.rtl,
-                                hintText: "الاسم",
-                                hintStyle: TextStyle(color: Color(0xff484541),fontSize: 11),
-                                enabledBorder: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(26),
-                                    borderSide: BorderSide(
-                                      color: Colors.white,
-                                    )
-                                ),
-                                focusedBorder: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(26),
-                                    borderSide: BorderSide(
-                                        color: Theme.of(context).primaryColor
-                                    )
-                                )
+                    Container(
+                      height: 51,
+                      child: TextFormField(
+                        textInputAction: TextInputAction.done,
+                        keyboardType: TextInputType.phone,
+                        textDirection: TextDirection.rtl,
+                        cursorColor: Colors.grey,
+                        decoration: InputDecoration(
+                            contentPadding: EdgeInsets.symmetric(horizontal: 20),
+                            fillColor: Color(0xff242746),
+                            filled: true,
+                            hintTextDirection: TextDirection.ltr,
+                            hintText: "UserName",
+                            hintStyle: TextStyle(color: Color(0xff7e809a),fontSize: 11),
+                            enabledBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(26),
+                                borderSide: BorderSide.none
                             ),
-                          ),
-                        ),
-                      ],
-                    ),
-                    SizedBox(height: 10,),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 14,vertical: 12),
-                          child: Text("كلمة المرور",style: TextStyle(fontSize: 13,fontWeight: FontWeight.bold,color: Color(0xff484541)),),
-                        ),
-                        Container(
-                          height: 51,
-                          child: TextFormField(
-                            textInputAction: TextInputAction.done,
-                            keyboardType: TextInputType.phone,
-                            textDirection: TextDirection.rtl,
-                            cursorColor: Colors.grey,
-                            decoration: InputDecoration(
-                                contentPadding: EdgeInsets.symmetric(horizontal: 20),
-                                fillColor: Colors.white,
-                                filled: true,
-                                hintTextDirection: TextDirection.rtl,
-                                hintText: "كلمة المرور الخاصة بك",
-                                hintStyle: TextStyle(color: Color(0xff484541),fontSize: 11),
-                                enabledBorder: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(26),
-                                    borderSide: BorderSide(
-                                      color: Colors.white,
-                                    )
-                                ),
-                                focusedBorder: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(26),
-                                    borderSide: BorderSide(
-                                        color: Theme.of(context).primaryColor
-                                    )
+                            focusedBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(26),
+                                borderSide: BorderSide(
+                                    color: Theme.of(context).primaryColor
                                 )
-                            ),
-                          ),
+                            )
                         ),
-                      ],
+                      ),
                     ),
-                    SizedBox(height: 10,),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 14,vertical: 12),
-                          child: Text("كلمة المرور",style: TextStyle(fontSize: 13,fontWeight: FontWeight.bold, color: Color(0xff484541)),),
-                        ),
-                        Container(
-                          height: 51,
-                          child: TextFormField(
-                            textInputAction: TextInputAction.done,
-                            keyboardType: TextInputType.phone,
-                            textDirection: TextDirection.rtl,
-                            cursorColor: Colors.grey,
-                            decoration: InputDecoration(
-                                contentPadding: EdgeInsets.symmetric(horizontal: 20),
-                                fillColor: Colors.white,
-                                filled: true,
-                                hintTextDirection: TextDirection.rtl,
-                                hintText: "كلمة المرور الخاصة بك",
-                                hintStyle: TextStyle(color: Color(0xff484541),fontSize: 11),
-                                enabledBorder: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(26),
-                                    borderSide: BorderSide(
-                                      color: Colors.white,
-                                    )
-                                ),
-                                focusedBorder: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(26),
-                                    borderSide: BorderSide(
-                                        color: Theme.of(context).primaryColor
-                                    )
-                                )
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-
-                    Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 50),
-                      child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            TextButton(
-                                onPressed: (){
-                                  Navigator.push(context, MaterialPageRoute(builder: (contex)=> AccountType()));
-                                },
-                                child: Text("اشتراك", style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold,color: Colors.white),),
-                                style: TextButton.styleFrom(
-                                  fixedSize: Size(279,59),
-                                  backgroundColor: Colors.black,
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(26),
-                                  ),
-                                ))]),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 0),
-                      child: InkWell(
-                          onTap: (){
-                            Navigator.push(context, MaterialPageRoute(builder: (contex)=> Login()));
-                          },
-                          child: Text("لديك حساب؟ سجل الآن",style: TextStyle(fontSize: 13,color: Color(0xff484541)),)),
-                    ),
-
                   ],
                 ),
-              ),
+                SizedBox(height: 26,),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      height: 51,
+                      child: TextFormField(
+                        textInputAction: TextInputAction.done,
+                        keyboardType: TextInputType.phone,
+                        textDirection: TextDirection.rtl,
+                        cursorColor: Colors.grey,
+                        decoration: InputDecoration(
+                            contentPadding: EdgeInsets.symmetric(horizontal: 20),
+                            fillColor: Color(0xff242746),
+                            filled: true,
+                            hintTextDirection: TextDirection.ltr,
+                            hintText: "Email",
+                            hintStyle: TextStyle(color: Color(0xff7e809a),fontSize: 11),
+                            enabledBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(26),
+                                borderSide: BorderSide.none
+                            ),
+                            focusedBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(26),
+                                borderSide: BorderSide(
+                                    color: Theme.of(context).primaryColor
+                                )
+                            )
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(height: 26,),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      height: 51,
+                      child: TextFormField(
+                        textInputAction: TextInputAction.done,
+                        keyboardType: TextInputType.phone,
+                        textDirection: TextDirection.rtl,
+                        cursorColor: Colors.grey,
+                        decoration: InputDecoration(
+                            contentPadding: EdgeInsets.symmetric(horizontal: 20),
+                            fillColor: Color(0xff242746),
+                            filled: true,
+                            hintTextDirection: TextDirection.ltr,
+                            hintText: "Password",
+                            hintStyle: TextStyle(color: Color(0xff7e809a),fontSize: 11),
+                            enabledBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(26),
+                                borderSide: BorderSide.none
+                            ),
+                            focusedBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(26),
+                                borderSide: BorderSide(
+                                    color: Theme.of(context).primaryColor
+                                )
+                            )
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(height: 26,),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      height: 51,
+                      child: TextFormField(
+                        textInputAction: TextInputAction.done,
+                        keyboardType: TextInputType.phone,
+                        textDirection: TextDirection.rtl,
+                        cursorColor: Colors.grey,
+                        decoration: InputDecoration(
+                            contentPadding: EdgeInsets.symmetric(horizontal: 20),
+                            fillColor: Color(0xff242746),
+                            filled: true,
+                            hintTextDirection: TextDirection.ltr,
+                            hintText: "Confirm Password",
+                            hintStyle: TextStyle(color: Color(0xff7e809a),fontSize: 11),
+                            enabledBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(26),
+                                borderSide: BorderSide.none
+                            ),
+                            focusedBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(26),
+                                borderSide: BorderSide(
+                                    color: Theme.of(context).primaryColor
+                                )
+                            )
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 18,),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Container(
+                        child:Checkbox(value: true, onChanged: (value){}),
+                      ),
+                      Flexible(
+                        child: RichText(
+                            text: TextSpan(
+                              style:TextStyle(height: 1.2),
+                                children: [
+                                  TextSpan(text: "By singing up you accept the ",style:  TextStyle(fontSize: 13,color: Color(0xff7e809a))),
+                                  TextSpan(text: "Terms of service ",style:  TextStyle(fontSize: 13,color: Color(0xfff9d133))),
+                                  TextSpan(text: "       and ",style:  TextStyle(fontSize: 13,color: Color(0xff7e809a))),
+                                  TextSpan(text: "Privacy Policy",style:  TextStyle(fontSize: 13,color: Color(0xfff9d133)))
 
-              Expanded(
-                child: Align(
-                    alignment: Alignment.bottomCenter,
-                    child: Image.asset("assets/images/test.png",)),
-              )
-            ],
+
+                                ])),
+                      )
+                    ],
+                  )
+
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 18),
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: TextButton(
+                            onPressed: (){},
+                            child: Text("Sign Up", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold,color: Colors.white),),
+                            style: TextButton.styleFrom(
+                              fixedSize: Size.fromHeight(50),
+                              backgroundColor: Color(0xfff9d133),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(26),
+                              ),
+                            )),
+                      ),
+                    ],
+                  ),
+                ),
+
+                Flexible(
+                  child: Padding(
+                      padding: const EdgeInsets.only(bottom: 60),
+                      child: InkWell(
+                        onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (contex)=> Login()));
+                        },
+                        child: Align(
+                          alignment: Alignment.bottomCenter,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text("Aleardy have an account?",style: TextStyle(fontSize: 11,color: Color(0xff7e809a)),),
+                              Text(" Sign In",style: TextStyle(fontSize: 11,color: Color(0xfff9d133)),),
+
+                            ],
+                          ),
+                        ),
+                      )
+                  ),
+                )
+              ],
+            ),
           ),),
       ),
     );
