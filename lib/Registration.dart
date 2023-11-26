@@ -1,6 +1,7 @@
 
 
 import 'package:dress/AccountType.dart';
+import 'package:dress/HomePage.dart';
 import 'package:dress/Login.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -202,7 +203,9 @@ class _RegistrationState extends State<Registration> {
                     children: [
                       Expanded(
                         child: TextButton(
-                            onPressed: (){},
+                            onPressed: (){
+                              Navigator.push(context, MaterialPageRoute(builder: (contex)=> Homepage()));
+                            },
                             child: Text("Sign Up", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold,color: Colors.white),),
                             style: TextButton.styleFrom(
                               fixedSize: Size.fromHeight(50),
